@@ -3,10 +3,9 @@
 #include <time.h>
 
 /**
- * main - print sign of random number
- *
+ * main - prints sign of random number
+ * Return: returns 0 on success
  */
-
 
 int main(void)
 {
@@ -14,12 +13,11 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
 	if (n > 0)
-		printf("%d is positive \n", n);
+		printf("%d is positive", n);
 	else if (n == 0)
-		printf("%d is zero \n", n);
-	else 
-		printf("%d is negative \n", n);
+		printf("%d is zero", n);
+	else
+		printf("%d is negative, n);
 	return (0);
 }
